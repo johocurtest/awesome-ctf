@@ -315,8 +315,8 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 238,
-                "y": 920
+                "x": 127,
+                "y": 789
               },
               "target": {
                 "x": 107,
@@ -449,6 +449,140 @@
               ],
               "z": 18,
               "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 679,
+                "y": 998
+              },
+              "target": {
+                "x": 149,
+                "y": 875
+              },
+              "vertices": [
+                {
+                  "x": 427,
+                  "y": 731
+                }
+              ],
+              "id": "dead3633-01a8-45f6-b3b0-932e4ede48ac",
+              "z": 19,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 293,
+                "y": 841
+              },
+              "angle": 0,
+              "id": "541679d4-7ec7-4d2f-a6b1-8ac0b7297234",
+              "z": 20,
+              "hasOpenThreats": false,
+              "storesCredentials": true,
+              "isEncrypted": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Github-repo"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 232,
+                "y": 600
+              },
+              "target": {
+                "id": "541679d4-7ec7-4d2f-a6b1-8ac0b7297234"
+              },
+              "vertices": [
+                {
+                  "x": 363,
+                  "y": 686
+                }
+              ],
+              "id": "cc9cf313-4ec8-4cf0-9e07-de73e6ce4e8f",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5574217535331469,
+                    "offset": -56.59785662796422
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "flow 16",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 21,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "541679d4-7ec7-4d2f-a6b1-8ac0b7297234"
+              },
+              "target": {
+                "id": "5fbbe447-abdf-4171-af84-e78067c1ac4f"
+              },
+              "vertices": [
+                {
+                  "x": 161,
+                  "y": 736
+                }
+              ],
+              "id": "340bc7ac-cb45-4af8-89d7-899be859b466",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Response",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 22,
+              "hasOpenThreats": false,
+              "protocol": "HTTPS",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
