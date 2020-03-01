@@ -9,7 +9,461 @@
       {
         "title": "AWS",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 75,
+                "y": 174
+              },
+              "angle": 0,
+              "id": "cc891c25-4b93-4fae-894e-bc0234d942de",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "AWS Storage Gateway"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 733,
+                "y": 50
+              },
+              "angle": 0,
+              "id": "dfbe2450-6b41-4444-86c5-77e76daf90a8",
+              "z": 3,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Misconfigurations S3 Bucket",
+                  "type": "Elevation of privilege",
+                  "description": "A misconfiguration in S3 Bucket can allow an attacker to elevate priviledges and access the information on the container"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Lack of encryption",
+                  "type": "Information disclosure",
+                  "description": "An unauthorized actor could access the data in the bucket and read information being stored about Employees"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Bucket"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "cc891c25-4b93-4fae-894e-bc0234d942de"
+              },
+              "target": {
+                "id": "dfbe2450-6b41-4444-86c5-77e76daf90a8"
+              },
+              "vertices": [
+                {
+                  "x": 432,
+                  "y": 120
+                }
+              ],
+              "id": "ab336d37-736e-44f1-9fd5-68a9c51b0d36",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.3470503839042381,
+                    "offset": -6.728055341850198
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "HTTP Request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 632,
+                "y": 258
+              },
+              "angle": 0,
+              "id": "b6ad6233-3793-4f47-ad5a-888ef7382e89",
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "AWS\nDeeplearning\ncontainer"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "dfbe2450-6b41-4444-86c5-77e76daf90a8"
+              },
+              "target": {
+                "id": "b6ad6233-3793-4f47-ad5a-888ef7382e89"
+              },
+              "vertices": [
+                {
+                  "x": 820,
+                  "y": 317
+                }
+              ],
+              "id": "1c817979-d294-4085-9974-f486c0fd1bc7",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 615,
+                "y": 1
+              },
+              "target": {
+                "x": 1174,
+                "y": 405
+              },
+              "vertices": [
+                {
+                  "x": 596,
+                  "y": 332
+                },
+                {
+                  "x": 735,
+                  "y": 430
+                }
+              ],
+              "id": "c3919bc2-6ae8-44c7-ac2d-3c1deea9bc9b",
+              "z": 10,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 1199,
+                "y": 527
+              },
+              "target": {
+                "x": 927,
+                "y": 1072
+              },
+              "vertices": [
+                {
+                  "x": 587,
+                  "y": 598
+                }
+              ],
+              "id": "920e2ab3-ed4d-47c4-ab0f-98c34a87e4af",
+              "z": 11,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 718,
+                "y": 638
+              },
+              "angle": 0,
+              "id": "ce2adeae-6248-4672-8c21-fba3e5fd8236",
+              "z": 12,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Stand-Alone\nAWS\nCONTAINER"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1070,
+                "y": 634
+              },
+              "angle": 0,
+              "id": "d4621fa7-bdd1-46d6-8765-9ce820f063c8",
+              "z": 13,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "MongoDB"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 71,
+                "y": 560
+              },
+              "angle": 0,
+              "id": "5fbbe447-abdf-4171-af84-e78067c1ac4f",
+              "z": 14,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "ANALYTICS TEAM"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 238,
+                "y": 920
+              },
+              "target": {
+                "x": 107,
+                "y": 467
+              },
+              "vertices": [
+                {
+                  "x": 285,
+                  "y": 608
+                }
+              ],
+              "id": "34e39af3-7164-40fb-8d2c-be5bc96d55de",
+              "z": 15,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "5fbbe447-abdf-4171-af84-e78067c1ac4f"
+              },
+              "target": {
+                "id": "ce2adeae-6248-4672-8c21-fba3e5fd8236"
+              },
+              "vertices": [
+                {
+                  "x": 473,
+                  "y": 487
+                }
+              ],
+              "id": "20f0c762-af9f-46af-b38c-727931fc8d75",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.496956750153071,
+                    "offset": -1.2764495213168396
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "SSH",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 16,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "ce2adeae-6248-4672-8c21-fba3e5fd8236"
+              },
+              "target": {
+                "id": "d4621fa7-bdd1-46d6-8765-9ce820f063c8"
+              },
+              "vertices": [
+                {
+                  "x": 938,
+                  "y": 595
+                }
+              ],
+              "id": "017e89b6-bb97-46f4-b6d9-843fb3e30561",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.4528645408635754,
+                    "offset": -1.9696975076867254
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "HTTP request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 17,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "d4621fa7-bdd1-46d6-8765-9ce820f063c8"
+              },
+              "target": {
+                "id": "ce2adeae-6248-4672-8c21-fba3e5fd8236"
+              },
+              "vertices": [
+                {
+                  "x": 930,
+                  "y": 772
+                }
+              ],
+              "id": "313c3aba-d8cb-483f-8a80-efae8b8acf26",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.6043880985979061,
+                    "offset": 14.372361081161161
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "HTTP Response",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 18,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 1488.0960693359375,
+          "width": 1605
+        }
       }
     ]
   }
