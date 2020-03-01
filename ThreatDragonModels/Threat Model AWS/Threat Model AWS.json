@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "title": "Threat Model AWS",
+    "owner": "Johanna"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "AWS",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
